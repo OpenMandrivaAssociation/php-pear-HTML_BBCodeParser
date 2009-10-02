@@ -6,7 +6,7 @@
 Summary:	%{_pearname} - parser to replace UBB style tags with their HTML equivalents
 Name:		php-pear-%{_pearname}
 Version:	1.2.2
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	PHP License
 Group:		Development/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
@@ -51,6 +51,7 @@ install -d %{buildroot}%{_datadir}/pear/%{_class}/%{_subclass}/Filter
 
 install %{_pearname}-%{version}/*.php				%{buildroot}%{_datadir}/pear/%{_class}
 install %{_pearname}-%{version}/%{_subclass}/Filter/*.php	%{buildroot}%{_datadir}/pear/%{_class}/%{_subclass}/Filter
+install %{_pearname}-%{version}/%{_subclass}/Filter.php	%{buildroot}%{_datadir}/pear/%{_class}/%{_subclass}/
 
 install -d %{buildroot}%{_datadir}/pear/packages
 install -m0644 package.xml %{buildroot}%{_datadir}/pear/packages/%{_pearname}.xml
@@ -84,5 +85,3 @@ rm -rf %{buildroot}
 %{_datadir}/pear/%{_class}/*.php
 %{_datadir}/pear/%{_class}/%{_subclass}
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
