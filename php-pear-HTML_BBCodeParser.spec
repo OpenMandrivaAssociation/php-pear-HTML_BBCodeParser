@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.2.2
-Release:	%mkrel 5
+Release:	%mkrel 6
 Summary:	Parser to replace UBB style tags with their HTML equivalents
 License:	PHP License
 Group:		Development/PHP
