@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.2.2
-Release:	%mkrel 7
+Release:	%mkrel 8
 Summary:	Parser to replace UBB style tags with their HTML equivalents
 License:	PHP License
 Group:		Development/PHP
@@ -56,7 +56,7 @@ pear install --nodeps --soft --force --register-only \
 %if %mdkversion < 201000
 if [ "$1" -eq "0" ]; then
     pear uninstall --nodeps --ignore-errors --register-only \
-        %{pear_name} >/dev/null || :
+        %{upstream_name} >/dev/null || :
 fi
 %endif
 
