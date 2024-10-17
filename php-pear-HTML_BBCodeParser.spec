@@ -8,7 +8,7 @@ Release:	10
 Summary:	Parser to replace UBB style tags with their HTML equivalents
 License:	PHP License
 Group:		Development/PHP
-URL:		http://pear.php.net/package/HTML_BBCodeParser/
+URL:		https://pear.php.net/package/HTML_BBCodeParser/
 Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
 Requires(post): php-pear
 Requires(preun): php-pear
